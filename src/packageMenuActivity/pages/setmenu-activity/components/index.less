@@ -1,0 +1,145 @@
+.buyCard {
+  width: 100%;
+  position: relative;
+  padding-bottom: 40rpx;
+
+  .btnWrap {
+    position: relative;
+    padding: 0 68rpx 0 68rpx;
+    .paybtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 108rpx;
+      border-radius: 152rpx;
+      border-width: 0;
+      background: linear-gradient(
+        180deg,
+        #f65d4c 0%,
+        #ec1326 86%,
+        #ff5f39 108%
+      );
+
+      box-sizing: border-box;
+
+      color: white;
+
+      .tip {
+        position: absolute;
+        right: 0;
+        top: -42rpx;
+        background-image: url("https://static.licaimofang.com/wp-content/uploads/2023/02/btn_tip.png");
+        height: 56rpx;
+        padding: 0 16rpx;
+        padding-top: 6rpx;
+        color: #43330d;
+        font-family: PingFang SC;
+        font-size: 22rpx;
+        font-weight: normal;
+      }
+      .btn_text {
+        font-family: SourceHanSansCN-Bold;
+        font-size: 40rpx;
+        font-weight: normal;
+        line-height: 44rpx;
+      }
+      .btn_desc {
+        font-family: PingFang SC;
+        font-size: 24rpx;
+        font-weight: normal;
+        line-height: 34rpx;
+        text-align: center;
+
+        .price {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+
+  .policyWrap {
+    margin-top: 34rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: PingFang SC;
+    font-size: 22rpx;
+    font-weight: normal;
+    text-align: center;
+    .weak {
+      color: #9aa1b2;
+    }
+    .hightlight {
+      color: #0051cc;
+    }
+  }
+}
+
+.sign_desc2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
+  line-height: 34px;
+  // prettier-ignore
+  margin-top: 10PX;
+}
+
+.paybtn.animator {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-name: paybtn-step-0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+}
+
+//@keyframes paybtn-step-0 {
+//  0% {
+//    transform: scale(1);
+//  }
+//  10% {
+//    transform: scale(1.2);
+//  }
+//  20% {
+//    transform: scale(1.4);
+//  }
+//  30% {
+//    transform: scale(1.6);
+//  }
+//  40% {
+//    transform: scale(1.8);
+//  }
+//  50% {
+//    transform: scale(2);
+//  }
+//  60% {
+//    transform: scale(1.8);
+//  }
+//  70% {
+//    transform: scale(1.6);
+//  }
+//  80% {
+//    transform: scale(1.4);
+//  }
+//  90% {
+//    transform: scale(1.2);
+//  }
+//  100% {
+//    transform: scale(1);
+//  }
+//}
+
+@keyframes paybtn-step-0 {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "projectname": "%E5%9F%BA%E9%87%91%E7%90%86%E8%B4%A2%E5%8A%A9%E6%89%8B",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false,
+    "bigPackageSizeSupport": true
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "理财课程介绍",
+          "pathName": "/packageLession/pages/article/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "课程详情-音频",
+          "pathName": "/packageLession/pages/article/detail",
+          "query": "article_id=3088&from=list",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "课程详情-视频",
+          "pathName": "/packageLession/pages/article/detail",
+          "query": "article_id=2947&from=list",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "课程详情-视频和文章",
+          "pathName": "/packageLession/pages/article/detail",
+          "query": "article_id=2965&from=list",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/bind-phone/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/hold/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/hold/index",
+          "query": "ad_channel=gdtzhushou1000000",
+          "launchMode": "default",
+          "scene": 1194
+        },
+        {
+          "name": "",
+          "pathName": "pages/novice-guidance/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/follow-official-account/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "packageAddFund/pages/add-fund/index",
+          "query": "type=3",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "packageActivity/pages/match-list/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "packageActivity/pages/match-ranking-list/index",
+          "query": "activity_id=1&schedule_id=9",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "packageActivity/pages/match-fund-list/index",
+          "query": "activity_id=1&schedule_id=8",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "packagePage/pages/guide-page/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "packageActivity/pages/match-fund-list/index",
+          "query": "activity_id=1&schedule_id=1",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "packageActivity/pages/match-fund-list/index",
+          "query": "activity_id=1&schedule_id=19",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/family-finance-class/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "支付页",
+          "pathName": "/pages/member-buy/pay",
+          "query": "type=payback",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "我的页面",
+          "pathName": "/pages/member-buy/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "1元活动落地页",
+          "pathName": "/packageMenuActivity/pages/setmenu-activity/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "信号详情",
+          "pathName": "pages/web-signal-details/index",
+          "query": "url=https%253A%252F%252Fgrowth-kp1.licaimofang.com%252Ffund-assistant%252Fsignal-details%253Ftoken%253DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Nzc0OTM0ODgsIm5iZiI6MTY3NzQ5MzQ4OCwiZXhwIjoxNzM4NTk3NDg4LCJyZWZyZXNoX2V4cCI6MTY4MDA4NTQ4OCwiZGF0YSI6eyJhc3NfdXNlcl9pZCI6NTM5NiwidW5pb25faWQiOiJvRHBaQTBzSlk3YzhwMmxIbklTTXNhektoVElzIiwidWlkIjoxMDAxNjUxMDc5LCJ1c2VyX3R5cGUiOjJ9fQ.fTAsZr31tO7tBMHCvU7Yhtwbb2b0aj7MeQ5O6HG1f9Q%2526uid%253D1001651079%2526fund_code%253D162703%2526chn%253Dshare%2526did%253D5CE55C0269FD0C2A3067FBD07786BADF%2526is_cover%253D0",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "关注公众号",
+          "pathName": "packagePage/pages/follow-official-account/index ",
+          "query": "back_type=2",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "套餐升级活动",
+          "pathName": "pages/upgrade-activity/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "2.17.0"
+}

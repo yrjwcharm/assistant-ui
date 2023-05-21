@@ -1,0 +1,87 @@
+.upgrade-activity {
+  background-color: #d92222;
+  width: 100%;
+
+  min-height: 100%;
+}
+.scrollWrap {
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: scroll;
+}
+
+.upgrade-activity {
+  .headerWrap {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    // prettier-ignore
+    .btnWrap {
+      position: absolute;
+      width: 420rpx;
+      height: 88rpx;
+      bottom: 112rpx;
+      left: calc(50% - 210rpx);
+
+      .img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.introImg {
+  width: 100%;
+  // prettier-ignore
+  margin-bottom: -6PX;
+}
+
+.bottomBtnWrap {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btnWrap {
+    width: 686rpx;
+    height: 108rpx;
+    max-height: 108rpx;
+
+    .img {
+      width: 686rpx;
+      height: 108rpx;
+      max-height: 108rpx;
+    }
+  }
+}
+
+.btnWrap.animator {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-name: paybtn-step-0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes paybtn-step-0 {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

@@ -1,0 +1,120 @@
+.paySuccessModal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 30, 32, 0.8);
+  }
+  .center_modal {
+    width: 560px;
+    background: white;
+    border-radius: 12px;
+    position: relative;
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+    padding: 40px;
+    .closeWrap {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 60px;
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    .modal_header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .success_icon {
+        width: 72px;
+        height: 72px;
+      }
+      .title {
+        margin-top: 16px;
+        font-size: 36px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: normal;
+        color: #121d3a;
+        line-height: 42px;
+      }
+      .desc {
+        width: 480px;
+        height: 408px;
+      }
+      .configWrap {
+        width: 100%;
+        height: 260rpx;
+        max-height: 260rpx;
+        margin-top: 40rpx;
+        margin-bottom: 40rpx;
+      }
+      .configImg {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .modal_footer {
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 26px;
+      line-height: 30px;
+      padding: 24px 40px 0 40px;
+      .skip {
+        width: 140px;
+        color: #545968;
+      }
+      .unlock {
+        width: 320px;
+        height: 84px;
+        background-color: #0051cc;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+      }
+    }
+    .modal_footer.config {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .more {
+        background-image: url("https://static.licaimofang.com/wp-content/uploads/2023/03/red_btn.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 88rpx;
+        width: 382rpx;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 36rpx;
+      }
+    }
+  }
+}

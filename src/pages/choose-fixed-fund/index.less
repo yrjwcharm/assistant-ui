@@ -1,0 +1,207 @@
+.fund-diagnosis-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 0;
+  .tab-container {
+    width: 100%;
+    flex: 1;
+    border-radius: 16px 16px 0 0;
+    background: #fff;
+    margin-top: -16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .tab-bar {
+      width: 100%;
+      display: flex;
+      height: 80px;
+      border-bottom: 1px solid #E9EAEF;
+      .tab {
+        flex: 1;
+        font-size: 28px;
+        font-weight: normal;
+        color: #545968;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .active-tab {
+        font-size: 28px;
+        font-weight: bold;
+        font-weight: normal;
+        color: #121D3A;
+        line-height: 34px;
+      }
+      .active-tab::after {
+        content: '';
+        display: flex;
+        // width: 40px;
+        // height: 4px;
+        width: 44px;
+        height: 6px;
+        background: #121D3A;
+        border-radius: 2px 2px 2px 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .tab-content-container {
+
+      }
+    }
+    .tab-content-container {
+      width: 100%;
+      flex: 1;
+      overflow: scroll;
+    }
+  }
+}
+.optional-search-c {
+  height: 68px;
+  border-radius: 34px;
+  background-color: rgba(189, 194, 204, 0.2);
+  display: flex;
+  align-items: center;
+  // padding: 0 26px;
+  .search-icon {
+    height: 100%;
+    padding-left: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >Image {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .input {
+    flex: 1;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 28px;
+    font-weight: normal;
+    color: #121D3A;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: normal;
+    color: #545968;
+    line-height: 36px;
+  }
+  .close-icon{
+    height: 100%;
+    padding-right: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.list_row_recommend {
+  display: flex;
+  background: #fff;
+  flex-direction: column;
+  //height: 93PX;
+  padding:12PX 16PX;
+  justify-content: center;
+  .bottom_line();
+
+  .list_row_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .right {
+      flex:1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .separator_img {
+        width: 79PX;
+        height: 3PX;
+      }
+
+      .status_view {
+        display: flex;
+        margin-top: 8PX;
+        flex-direction: row;
+        align-items: center;
+        //justify-content: space-between;
+
+        .status_text {
+          font-size: 11PX;
+          font-family: PingFangSC-Regular;
+
+          color: #9AA0B1;
+        }
+
+        .status {
+          margin-left: 4PX;
+          font-size: 12PX;
+          font-family: PingFangSC-Medium;
+
+          color: #E74949;
+        }
+      }
+    }
+
+    .left {
+      flex:1;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-size: 14PX;
+        font-family: PingFangSC-Regular;
+
+        color: #121D3A;
+      }
+
+      .percent {
+        margin-top: 8PX;
+        font-size: 20PX;
+        font-family: PingFangSC-Medium;
+        color: #E74949;
+      }
+
+      .profit_rate {
+        margin-top: 2PX;
+        font-size: 11PX;
+        font-family: PingFangSC-Regular;
+        color: #9AA0B1;
+      }
+    }
+  }
+}
+
+.bottom_line(@color:#E9EAEF,@style:solid) {
+  position: relative;
+  &:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    content: '';
+    border-top: 1px @style @color;
+    -webkit-transform: scale(0.5);
+    transform: scaleY(0.5);
+  }
+}
+.bottom_tabbar{
+  position: relative;
+  width: 100%;
+  background: #fff;
+  bottom:0;
+  z-index: 10;
+}

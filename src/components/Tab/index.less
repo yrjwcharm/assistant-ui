@@ -1,0 +1,41 @@
+.tab {
+  width: 100%;
+  height: 88rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  .tabitem {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    font-family: PingFangSC-Regular;
+    color: #545968;
+    font-weight: 400;
+    font-size: 28rpx;
+    position: relative;
+    .line {
+      display: none;
+      width: 40rpx;
+      height: 4rpx;
+      background-color: #121d3a;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-20rpx);
+    }
+
+    &.selected {
+      font-weight: 500;
+      color: #121d3a;
+      font-family: PingFangSC-Medium, PingFang SC;
+
+      .line {
+        display: block;
+      }
+    }
+  }
+}

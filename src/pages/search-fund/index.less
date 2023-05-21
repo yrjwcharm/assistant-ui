@@ -1,0 +1,114 @@
+@import url('../../app');
+.search_fund_box{
+  height: 100%;
+  background: #fff;
+  overflow-y: scroll;
+  padding-top: 8PX;
+    &_list{
+      padding:12PX 0;
+      margin:0 16PX;
+      .bottom_line(#E9EAEF);
+
+      .list_wrap{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+         .left{
+           display: flex;
+           flex:1.5;
+           flex-direction: column;
+            .top_wrap{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+                .fund_name{
+                  font-size: 14PX;
+                  font-family: PingFangSC-Regular, PingFang SC;
+                  font-weight: normal;
+                  color: #121D3A;
+                  //.single_ell();
+                }
+                .fund_code{
+                  margin-left: 4PX;
+                  font-size: 11PX;
+                  font-family: PingFangSC-Regular, PingFang SC;
+                  font-weight: normal;
+                  color: #9AA1B2;
+                }
+            }
+            .center{
+              margin-top: 8PX;
+              font-size: 20PX;
+              font-family: PingFangSC-Medium;
+              font-weight: 400;
+              color: #E74949;
+            }
+            .bottom_title{
+              margin-top: 8PX;
+              font-size: 11PX;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: normal;
+              color: #9AA1B2;
+            }
+         }
+          .right_wrap {
+            display: flex;
+            flex:1;
+            flex-direction: column;
+            align-items: flex-end;
+            .right {
+              background: #FFFFFF;
+              padding: 3PX 12PX;
+              .all(#0051CC, 103PX);
+              font-size: 12PX;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: normal;
+              color: #0051CC;
+            }
+          }
+      }
+    }
+    &_search_wrap {
+      margin-bottom: 20PX;
+      display: flex;
+      flex-direction: row;
+      margin-left: 16PX;
+      margin-right: 16PX;
+      align-items: center;
+      justify-content: space-between;
+      .search_text{
+        margin-left: 11PX;
+        font-size: 14PX;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: normal;
+        color: #545968;
+      }
+      .search {
+        flex:1;
+        height: 34PX;
+        display: flex;
+        padding-left: 16PX;
+        flex-direction: row;
+        align-items: center;
+        background: #f5f6f8;
+        border-radius: 146PX;
+
+        .search_icon {
+          width: 13PX;
+          height: 14PX;
+        }
+
+        .input {
+          margin-left: 4PX;
+          flex: 1;
+        }
+
+        .placeholderClass {
+          font-size: 13PX;
+          font-family: PingFangSC-Regular;
+          color: #545968;
+        }
+      }
+    }
+}

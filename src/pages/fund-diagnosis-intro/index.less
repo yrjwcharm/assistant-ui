@@ -1,0 +1,113 @@
+.diagnosis-intro{
+  height: 100%;
+  background: #F5F6F8;
+  overflow-y: scroll;
+    .fixed_nav{
+      position: fixed;
+      width: 100%;
+      top:0;
+      z-index: 10;
+    }
+
+  .fixed_tabbar{
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    z-index: 10;
+  }
+    .content{
+        .intro_header{
+          width: 100%;
+          height: 280PX;
+          padding-top: 118PX;
+            .search_bar{
+              position: relative;
+              margin-left: 16PX;
+              margin-right: 16PX;
+              height: 44PX;
+              display: flex;
+              padding-left: 16PX;
+              flex-direction: row;
+              align-items: center;
+              background: #FFFFFF;
+              border-radius: 146PX;
+              .btn_auth{
+                background: transparent;
+                width: 100%;
+                height: 34PX;
+                position: absolute;
+                left:0;
+                right:0;
+                z-index: 5;
+                margin:0 auto;
+                border-radius: 146PX;
+              }
+                .search_icon{
+                  width: 13PX;
+                  height: 14PX;
+                }
+                .input{
+                  margin-left: 4PX;
+                  flex:1;
+                }
+                .placeholderClass{
+                  font-size: 13PX;
+                  font-family: PingFangSC-Regular;
+                  color: #545968;
+                }
+            }
+        }
+      .article{
+        position: relative;
+        top:-100PX;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img1{
+          width:91.466666666% ;
+          height: 244PX;
+        }
+        .img2{
+          margin-top: 12PX;
+          width:91.466666666%;
+          height:1050PX;
+        }
+      }
+    }
+}
+
+.fixed_modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(30, 30, 32, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .modal {
+    position: relative;
+    width: 280PX;
+    height: 309PX;
+
+    .close_circle {
+      position: absolute;
+      top: -31PX;
+      right: 20PX;
+      width: 21PX;
+      height: 31PX;
+    }
+    .pop_btn{
+      width: 220PX;
+      height: 40PX;
+      position: absolute;
+      left:0;
+      right:0;
+      margin:0 auto;
+      bottom: 30PX;
+    }
+  }
+}

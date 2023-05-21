@@ -1,0 +1,17 @@
+diff --git a/node_modules/taro-ui/types/noticebar.d.ts b/node_modules/taro-ui/types/noticebar.d.ts
+index f3f1c33..e5dd020 100644
+--- a/node_modules/taro-ui/types/noticebar.d.ts
++++ b/node_modules/taro-ui/types/noticebar.d.ts
+@@ -1,9 +1,11 @@
+-import { ComponentClass } from 'react'
++import {ComponentClass, ReactNode} from 'react'
+ import { CommonEvent } from '@tarojs/components/types/common'
+ 
+ import AtComponent from './base'
+ 
+ export interface AtNoticeBarProps extends AtComponent {
++  children?:ReactNode,
++
+   /**
+    * 是否需要关闭按钮
+    * @default false

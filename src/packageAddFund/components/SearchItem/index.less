@@ -1,0 +1,74 @@
+.search-item-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E9EAEF;
+  padding-bottom: 24px;
+  height: 162px;
+  margin-bottom: 22px;
+  .content-c {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .fund-name{
+      font-size: 28px;
+      font-weight: normal;
+      color: #121D3A;
+      line-height: 39px;
+    }
+    .fund-code{
+      font-size: 24px;
+      font-weight: normal;
+      color: #9AA0B1;
+      line-height: 34px;
+      margin-left: 12px;
+    }
+    .fund-yield{
+      font-size: 40px;
+      font-family: din-bold;
+      font-weight: bold;
+      line-height: 48px;
+    }
+    .fund-key{
+      font-size: 22px;
+      font-weight: normal;
+      color: #9AA0B1;
+      line-height: 31px;
+      margin-top: 4px;
+    }
+  }
+  .collection-c {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    .button {
+      width: 128px;
+      height: 60px;
+      border-radius: 100px 100px 100px 100px;
+      opacity: 1;
+      border: 1px solid #545968;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      >Text {
+        font-size: 24px;
+        font-weight: normal;
+        color: #545968;
+        line-height: 34px;
+      }
+    }
+    .button.active {
+      border: 1px solid #0051CC;
+      >Text {
+        color: #0051CC;
+      }
+    }
+    >Image{
+      width: 52px;
+      height: 52px;
+    }
+  }
+}

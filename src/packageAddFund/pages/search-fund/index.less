@@ -1,0 +1,75 @@
+.search-fund-container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .search-container {
+    padding-left: 34px;
+    display: flex;
+    .search{
+      padding: 24px 0;
+      flex: 1;
+      overflow: hidden;
+      >View{
+        height: 64px;
+        border-radius: 32px;
+        background-color: rgba(189, 194, 204, 0.2);
+        display: flex;
+        align-items: center;
+        // padding: 0 26px;
+        .search-icon {
+          height: 100%;
+          padding-left: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          >Image {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .input {
+          // flex: 1;
+          width: calc(100vw * 0.6);
+          height: 100%;
+          // max-width: 100%;
+          padding: 0 10px;
+          font-size: 28px;
+          font-weight: normal;
+          color: #121D3A;
+          line-height: 39px;
+          box-sizing: border-box;
+        }
+        .close-icon{
+          height: 100%;
+          padding-right: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .search-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 30px 0 20px;
+      font-size: 28px;
+      font-weight: normal;
+      color: #545968;
+      line-height: 39px;
+    }
+  }
+  .search-result-card{
+    padding: 0 32px;
+    .card-name {
+      font-size: 32px;
+      font-weight: normal;
+      color: #121D3A;
+      line-height: 45px;
+    }
+  }
+}

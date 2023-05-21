@@ -1,0 +1,79 @@
+.profit_mx_box {
+  height: 100%;
+  overflow-y: scroll;
+  background: #f5f6f8;
+  .profit_analysis_list_row {
+    height: 60px;
+    margin-bottom: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+    background: #f5f6f8;
+    border-radius: 6px;
+    .row_item {
+      height: 60px;
+      border-radius: 6px;
+      display: flex;
+      line-height: 60px;
+      min-width: 260px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 16px;
+      padding-right: 16px;
+      color: #fff;
+      .date {
+        font-size: 26px;
+        flex: 1;
+        font-family: PingFangSC-Regular;
+      }
+      .value {
+        font-size: 26px;
+        font-family: PingFangSC-Regular;
+      }
+    }
+  }
+  .profit_mx_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    justify-content: space-around;
+    padding: 20px 68px;
+    margin-bottom: 32px;
+    .left_side {
+      display: flex;
+      flex-direction: column;
+      .label {
+        font-size: 28px;
+        color: #121d3a;
+        font-family: PingFangSC-Regular, serif;
+      }
+      .value {
+        margin-top: 8px;
+        font-size: 32px;
+        color: #4ba471;
+        font-family: PingFangSC-Medium, serif;
+      }
+    }
+    .center_side {
+      width: 2px;
+      height: 62px;
+      background: #e9eaef;
+    }
+    .right_side {
+      display: flex;
+      flex-direction: column;
+      .label {
+        font-size: 28px;
+        color: #121d3a;
+        font-family: PingFangSC-Regular, serif;
+      }
+      .value {
+        margin-top: 8px;
+        font-size: 32px;
+        color: #4ba471;
+        font-family: PingFangSC-Medium, serif;
+      }
+    }
+  }
+}

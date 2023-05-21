@@ -1,0 +1,46 @@
+.gesture-guide-container {
+  max-height: 100%;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.8) 49%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  left: 0;
+  z-index: 4;
+  > View {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 40px;
+    .gesture-img {
+      width: 174px;
+      height: 94px;
+      // margin-bottom: 18px;
+      margin-top: 18px;
+    }
+    .gesture-text {
+      font-size: 32px;
+      font-weight: bold;
+      color: #121d3a;
+      line-height: 45px;
+    }
+    .gesture-button {
+      width: 200px;
+      height: 80px;
+      border-radius: 12px;
+      border: 2px solid #121d3a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: normal;
+      color: #121d3a;
+      line-height: 39px;
+      margin-top: 24px;
+    }
+  }
+}

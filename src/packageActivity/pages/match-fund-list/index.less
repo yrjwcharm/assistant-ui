@@ -1,0 +1,226 @@
+.activity-match-fund-list {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F6F8;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  .match-fund-content {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .match-fund-top {
+      padding: 24px 32px 0;
+      background-color: #fff;
+      .match-title {
+        font-size: 32px;
+        font-weight: bold;
+        color: #121D3A;
+        line-height: 45px;
+      }
+      .match-date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 8px;
+        padding-bottom: 40px;
+        font-size: 24px;
+        font-weight: normal;
+        color: #545968;
+        line-height: 34px;
+      }
+    }
+    .my-info {
+      padding: 0 32px;
+      background-color: #fff;
+      .my-card {
+        padding: 32px 32px 0;
+        background: #FFF6F3;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        .user-info-container {
+          display: flex;
+          // align-items: center;
+          .head-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 24px;
+            background: pink;
+            >Image {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+          .use-info {
+            flex: 1;
+            padding-bottom: 24px;
+            .li {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .nick-name {
+                font-size: 30px;
+                font-weight: bold;
+                color: #121D3A;
+                line-height: 42px;
+              }
+              .ranking {
+                font-size: 24px;
+                font-weight: normal;
+                color: #222222;
+                line-height: 28px;
+                >Text {
+                  color: #F34540;
+                  font-weight: bold;
+                  // font-family: din-bold;
+                }
+              }
+              .key {
+                font-size: 22px;
+                font-weight: normal;
+                color: #9AA0B1;
+                line-height: 34px;
+              }
+              .value {
+                font-size: 30px;
+                font-family: din-bold;
+                line-height: 34px;
+                margin-left: 16px;
+              }
+            }
+          }
+        }
+        .match-fund {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 22px;
+          color: #F34540;
+          line-height: 31px;
+          padding: 32px;
+          border-top: 2px solid #FFCFBE;
+        }
+      }
+    }
+    .match-fund-table {
+      width: 100%;
+      background-color: #fff;
+      .table-head {
+        display: flex;
+        padding: 16px 32px;
+        align-items: center;
+        .head {
+          font-size: 22px;
+          color: #545968;
+          line-height: 31px;
+          display: flex;
+          flex-direction: column;
+          .sub-title {
+            display: flex;
+            height: 28px;
+            font-size: 20px;
+            color: #9AA0B1;
+            line-height: 28px;
+          }
+        }
+        .first {
+          font-size: 28px;
+          font-weight: normal;
+          color: #545968;
+          line-height: 39px;
+        }
+      }
+      .table-body {
+        .list {
+          height: 96px;
+          display: flex;
+          align-items: center;
+          padding: 0 32px;
+          .sub-title {
+            display: flex;
+            height: 28px;
+            font-size: 20px;
+            color: #9AA0B1;
+            line-height: 28px;
+          }
+          .first{
+            display: flex;
+            align-items: center;
+            flex: 1;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            .fund-name {
+              width: 100%;
+              font-size: 26px;
+              font-weight: normal;
+              color: #121D3A;
+              overflow: hidden;
+              line-height: 36px;
+              white-space: nowrap;
+              flex-wrap: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+          .second, .third {
+            font-size: 30px;
+            font-family: din-bold;
+            font-weight: bold;
+            line-height: 42px;
+          }
+        }
+        .list:nth-child(odd){
+          background-color: #F5F6F8;
+        }
+      }
+      .first {
+        flex: 1;
+      }
+      .second {
+        width: 142px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .third {
+        width: 142px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+    .rules-contaier {
+      width: 100%;
+      padding: 28px 32px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 28px;
+      font-weight: bold;
+      color: #121D3A;
+      line-height: 39px;
+      margin-top: 24px;
+    }
+  }
+  .match-fund-btn-container {
+    padding: 16px 40px;
+    >View{
+      width: 100%;
+      border-radius: 44px;
+      overflow: hidden;
+    }
+  }
+  .list-container {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    >View {
+      padding: 0 32px;
+      margin-bottom: 30px;
+    }
+  }
+}

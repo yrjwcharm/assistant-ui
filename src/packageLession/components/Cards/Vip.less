@@ -1,0 +1,75 @@
+.vipCard {
+  background: linear-gradient(180deg, rgba(255, 250, 241, 0) 0%, #fff5e1 100%);
+  opacity: 1;
+  border: 1px solid #f7e1be;
+  border-top: none;
+  padding: 32px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .titleWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .title {
+      font-size: 32px;
+      font-family: "PingFang SC-中黑体, PingFang SC";
+      font-weight: bold;
+      color: #121d3a;
+      line-height: 38px;
+    }
+    .desc {
+      margin-top: 8px;
+      font-size: 24px;
+      font-family: "PingFang SC-常规体, PingFang SC";
+      font-weight: normal;
+      color: #545968;
+      line-height: 28px;
+    }
+  }
+
+  .upBtn {
+    margin-left: 32px;
+    background: linear-gradient(180deg, #e5c087 0%, #d5a864 100%);
+    border-radius: 12px 12px 12px 12px;
+    position: relative;
+    min-height: 80px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tipWrap {
+      background-color: #e74949;
+      border-radius: 20px;
+      border-bottom-left-radius: 0;
+      position: absolute;
+      right: 0;
+      top: -20px;
+      height: 40px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 12px;
+
+      .tip {
+        font-size: 22px;
+        font-family: "PingFang SC-中黑体, PingFang SC";
+        font-weight: normal;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+    }
+    .upBtn_text {
+      font-size: 28px;
+      font-family: "PingFang SC-中黑体, PingFang SC";
+      font-weight: normal;
+      color: #ffffff;
+      line-height: 33px;
+    }
+  }
+}

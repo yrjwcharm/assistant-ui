@@ -1,0 +1,47 @@
+@import url("../../../app");
+
+.invite_friend_get_combo {
+  display: flex;
+  flex-direction: column;
+  height: 108px;
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  margin: 24px 32px 0 32px;
+  padding-left: 24px;
+  padding-right: 32px;
+  justify-content: center;
+  &_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .left_side {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .icon {
+        width: 64px;
+        height: 64px;
+      }
+      .title {
+        margin-left: 16px;
+        font-size: 28px;
+        font-family: PingFangSC-Medium, PingFang SC, serif;
+        font-weight: 500;
+        color: #121d3a;
+      }
+    }
+    .right_side {
+      width: 120px;
+      height: 60px;
+      .all(#0051cc,12px);
+      text-align: center;
+      line-height: 60px;
+      font-size: 24px;
+      font-family: PingFangSC-Semibold, PingFang SC, serif;
+      font-weight: 600;
+      color: #0051cc;
+    }
+  }
+}

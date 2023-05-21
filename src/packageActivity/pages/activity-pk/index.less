@@ -1,0 +1,129 @@
+#activity-pk {
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #D92222;
+  .at-noticebar-view {
+    width: 100%;
+    padding: 20px 0 20px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    .at-noticebar {
+      height: 64px;
+      padding: 0;
+      background-color: transparent;
+      color: #000;
+      .at-noticebar__content {
+        height: 100%;
+      }
+    }
+    .at-noticebar-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 64px;
+      >View{
+        display: flex;
+        height: 64px;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255,237,174,0.7);
+        border-radius: 32px;
+        padding: 0 14px;
+        >Image {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          margin-right: 14px;
+        }
+        >Text{
+          font-size: 24px;
+          font-weight: normal;
+          color: #D83D32;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+  .receive-prizes {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(180deg, #FA8159 0%, #D92122 100%);
+    box-shadow: 0px 8px 16px 0px rgba(107,0,0,0.2);
+    border-radius: 60px;
+    border: 4px solid #FFFFFF;
+    position: absolute;
+    z-index: 22;
+    bottom: 30%;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 36px;
+    animation: receiveBtnAnim 1s infinite;
+    >Image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@keyframes receiveBtnAnim {
+  // 0%  {
+  //   transform: scale(1);
+  // }
+  // 25%  {
+  //   transform: scale(1.1);
+  // }
+  // 50%  {
+  //   transform: scale(1.2);
+  // }
+  // 75% {
+  //   transform: scale(1.1);
+  // }
+  // 100%  {
+  //   transform: scale(1);
+  // }
+  0%  {
+    transform: scale(1);
+  }
+  10%  {
+    transform: scale(1.04);
+  }
+  20%  {
+    transform: scale(1.08);
+  }
+  30%  {
+    transform: scale(1.12);
+  }
+  40%  {
+    transform: scale(1.16);
+  }
+  50%  {
+    transform: scale(1.2);
+  }
+  60%  {
+    transform: scale(1.16);
+  }
+  70%  {
+    transform: scale(1.12);
+  }
+  80%  {
+    transform: scale(1.08);
+  }
+  90% {
+    transform: scale(1.04);
+  }
+  100%  {
+    transform: scale(1);
+  }
+}

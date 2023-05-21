@@ -1,0 +1,122 @@
+.lessions-list {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .lessions-banner {
+    width: 100vw;
+    height: 40vw;
+  }
+
+  .lession-header {
+    width: 100vw;
+    height: 108px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 32px;
+    background-color: #f5f6f8;
+
+    .lession-title-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+    }
+
+    .lession-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #121d3a;
+      font-family: PingFangSC-Semibold;
+    }
+    .lession-middle {
+      font-size: 28px;
+      font-weight: normal;
+      color: #3d3d3d;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    .lession-subtitle {
+      font-size: 28px;
+      font-weight: normal;
+      color: #3d3d3d;
+    }
+
+    .lession-arrow-wrap {
+      width: 96px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .lession-arrow {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  .lession-content {
+    padding: 16px 0;
+    background-color: white;
+    transition: height 2s;
+  }
+
+  .lession-content.open {
+    height: auto;
+  }
+  .lession-content.close {
+    height: 0;
+    padding: 0;
+    .article {
+      display: none;
+    }
+  }
+
+  .article {
+    padding: 22px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+    .article-tag-wrap {
+      margin-top: 8px;
+      border: 1px solid #bdc2cc;
+      border-radius: 4px;
+      width: 56px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .article-tag {
+        color: #545968;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: normal;
+      }
+    }
+    .article-title-wrap {
+      flex: 1;
+      margin-left: 24px;
+      margin-right: 32px;
+      text-align: left;
+      .article-title {
+        text-align: left;
+        font-size: 28px;
+        // line-height: 33px;
+        font-weight: normal;
+        font-family: "PingFang SC-常规体, PingFang SC";
+      }
+    }
+    .lock-wrap {
+      margin-top: 4px;
+      .lock {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

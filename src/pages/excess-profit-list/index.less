@@ -1,0 +1,214 @@
+@import url('../../app');
+.excess_profit_box{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  background: #F5F6F8;
+  overflow-y: scroll;
+    .empty_tip{
+      display: flex;
+      flex:1;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+        .empty_wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .icon {
+            width: 115PX;
+            height: 61PX;
+          }
+
+          .empty_text {
+            font-size: 11PX;
+            font-family: PingFangSC-Regular;
+            color: #121D3A;
+          }
+        }
+    }
+    .recommend{
+      border-radius: 6PX;
+      margin:16PX;
+      background: #fff;
+      padding:16PX 16PX 0 16PX;
+        &_title{
+          font-size: 14PX;
+          color:#121D3A;
+          font-family: PingFangSC-Regular;
+        }
+        &_content{
+          .content_list{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 12PX;
+            padding-bottom: 11PX;
+            .bottom_line(#E9EAEF);
+            .left{
+              flex:1;
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              .mask{
+                position: absolute;
+                z-index: 12;
+                background: rgba(255,255,255,0.4);
+                backdrop-filter: blur(5PX);
+                -webkit-backdrop-filter: blur(5PX);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                .title{
+                  margin:auto;
+                  font-size: 12PX;
+                  font-family: PingFangSC-Regular, PingFang SC;
+                  font-weight: 400;
+                  color: #121D3A;
+                }
+              }
+              .fund_name{
+                font-size: 13PX;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #121D3A;
+                  .ell();
+              }
+              .fund_code{
+                margin-top: 1PX;
+                font-size: 12PX;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #545968;
+              }
+            }
+            .center{
+              flex:1;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              .title{
+                font-size: 12PX;
+                font-family: PingFangSC-Regular;
+                font-weight: 400;
+                color: #E74949;
+              }
+            }
+            .right{
+              flex:1.2;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              .title{
+                font-size: 12PX;
+                font-family: PingFangSC-Regular;
+                font-weight: 400;
+                color: #E74949;
+              }
+            }
+
+          }
+          .content_header{
+            display: flex;
+            flex-direction: column;
+            height:45PX;
+            justify-content: center;
+            .bottom_line(#E9EAEF);
+            .header_wrap{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              .fund_name{
+                flex:1;
+                font-size: 11PX;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #545968;
+              }
+              .history_wrap{
+                display: flex;
+                flex:1;
+                flex-direction: row;
+                justify-content: flex-end;
+                .history_profit{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  font-size: 11PX;
+                  font-family: PingFangSC-Regular, PingFang SC;
+                  font-weight: 400;
+                  color: #545968;
+                }
+                .ask{
+                  margin-left: 2PX;
+                  width: 16PX;
+                  height: 16PX;
+                }
+              }
+              .superWrap{
+                flex:1.2;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                 .super_item {
+                   display: flex;
+                   flex-direction: row;
+                   align-items: center;
+                   .superProfit {
+                     font-size: 11PX;
+                     font-family: PingFangSC-Regular, PingFang SC;
+                     font-weight: 400;
+                     color: #545968;
+                   }
+
+                   .ask {
+                     margin-left: 2PX;
+                     width: 16PX;
+                     height: 16PX;
+                   }
+                 }
+              }
+
+            }
+          }
+        }
+        .rank_update_date{
+          font-size: 11PX;
+          margin-top: 8PX;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: normal;
+          color: #9AA1B2;
+        }
+        &_header{
+          margin-top: 11PX;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+            .rank_wrap{
+              display: flex;
+              align-items: center;
+              .nav_btn{
+                margin-right:8PX;
+                font-size: 11PX;
+                padding:6PX 12PX;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #121D3A;
+                background: #F5F6F8;
+                border-radius: 20PX;
+              }
+              .nav_active_btn{
+                padding:6PX 12PX;
+                background: #DEE8FF;
+                border-radius: 20PX;
+                font-size: 11PX;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: #0051CC;
+              }
+            }
+        }
+    }
+}

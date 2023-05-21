@@ -1,0 +1,157 @@
+page {
+  height: 100%;
+  width: 100%;
+  font-family: PingFangSC-Regular, PingFang SC;
+  overflow: hidden;
+}
+
+view,
+scroll-view,
+swiper,
+swiper-item,
+movable-area,
+movable-view,
+cover-view,
+cover-image,
+icon,
+text,
+rich-text,
+progress,
+button,
+checkbox-group,
+checkbox,
+form,
+input,
+label,
+picker,
+picker-view,
+radio-group,
+radio,
+slider,
+switch,
+textarea,
+navigator,
+functional-page-navigator,
+image,
+video,
+camera,
+live-player,
+live-pusher,
+map,
+canvas,
+open-data,
+web-view,
+ad {
+  box-sizing: border-box;
+}
+
+button::after {
+  width: 0;
+  border: none;
+}
+button {
+  background: transparent;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+.button-hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+View {
+  box-sizing: border-box;
+}
+
+.at-load-more {
+  height: 100% !important;
+}
+
+.app-flex-column-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.app-flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all(@border-color:#E9EAEF,@border-radius:5px) {
+  position: relative;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    pointer-events: none;
+    height: 200%;
+    transform: scale(0.5);
+    transform-origin: left top;
+    box-sizing: border-box;
+    border: 1px solid @border-color;
+    border-radius: @border-radius*2;
+  }
+}
+.top_line(@color:#E9EAEF,@style:solid) {
+  position: relative;
+  &:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    content: "";
+    border-top: 1px @style @color;
+    -webkit-transform: scale(0.5);
+    transform: scaleY(0.5);
+  }
+}
+
+.bottom_line(@color:#E9EAEF,@style:solid) {
+  position: relative;
+  &:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    content: "";
+    border-top: 1px @style @color;
+    -webkit-transform: scale(0.5);
+    transform: scaleY(0.5);
+  }
+}
+/**s
+ * 默认主题下 @color-border-light
+ */
+.ell() {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.single_ell() {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}

@@ -1,0 +1,76 @@
+.ranking-list-table {
+  width: 100%;
+  margin-top: 10px;
+  .table-head {
+    display: flex;
+    padding: 16px 32px;
+    align-items: center;
+    .head {
+      font-size: 22px;
+      color: #9AA0B1;
+      line-height: 31px;
+    }
+  }
+  .table-body {
+    .list {
+      height: 96px;
+      display: flex;
+      align-items: center;
+      padding: 0 32px;
+      border-bottom: 1px solid #E9EAEF;
+      .first{
+        display: flex;
+        align-items: center;
+        .sort-view {
+          width: 48px;
+          height: 48px;
+          margin-right: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 28px;
+          font-family: din-bold;
+          font-weight: bold;
+          color: #545968;
+          line-height: 39px;
+        }
+        .sort-icon {
+          width: 48px;
+          height: 48px;
+          margin-right: 14px;
+        }
+        .head-img{
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          margin-right: 14px;
+        }
+        .nick-name {
+          flex: 1;
+          font-size: 28px;
+          font-weight: bold;
+          color: #121D3A;
+          line-height: 39px;
+        }
+      }
+      .second {
+        font-size: 30px;
+        font-family: din-bold;
+        font-weight: bold;
+        line-height: 42px;
+      }
+    }
+    .active{
+      border-bottom: 0;
+      background-color: #FFF6F3;
+    }
+  }
+  .first {
+    flex: 1;
+  }
+  .second {
+    width: 142px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

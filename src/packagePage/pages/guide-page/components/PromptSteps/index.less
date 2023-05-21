@@ -1,0 +1,54 @@
+.prompt-steps-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  .prompt-steps-modal-C {
+    width: 560px;
+    height: 808px;
+    border-radius: 8px;
+    margin-top: 38%;
+    // top: 12%;
+    position: relative;
+  }
+  .prompt-steps-modal {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+  .prompt-steps-modal-close {
+    padding: 0 56px;
+    height: 62px;
+    position: absolute;
+    top: -62px;
+    right: 0;
+    font-size: 0;
+  }
+  .point-container {
+    width: 100%;
+    position: absolute;
+    bottom: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .point{
+      width: 12px;
+      height: 12px;
+      background: #E9EAEF;
+      border-radius: 50%;
+    }
+    .point-active{
+      width: 60px;
+      height: 12px;
+      background: #0051CC;
+      border-radius: 6px;
+    }
+  }
+}
